@@ -1,0 +1,14 @@
+@import '../../styles/variables.scss';
+
+.icon-link {
+  width: 30px;
+  height: 30px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.icon-link__img {
+  fill: $color-purple-brown;
+}
