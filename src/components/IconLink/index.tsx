@@ -13,7 +13,7 @@ export enum EnumIcon {
 }
 
 type IconLink = {
-  icon: string;
+  icon: EnumIcon;
 };
 
 const IconLink: React.FC<IconLink> = ({ icon }: IconLink) => {
