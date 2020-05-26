@@ -1,9 +1,16 @@
 @import '../../styles/variables.scss';
 
 .nav-link {
+  font-family: $font-family-heading;
   font-size: 12px;
   line-height: 20px;
   letter-spacing: 2.5px;
   text-transform: uppercase;
   color: $color-purple-brown;
+  font-weight: 500;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
