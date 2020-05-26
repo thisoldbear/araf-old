@@ -3,6 +3,8 @@ import { storiesOf } from "@storybook/react";
 
 import IconLink, { EnumIcon } from "./index";
 
-for (let icon in EnumIcon) {
-  storiesOf("Icon Link", module).add(icon, () => <IconLink icon={icon} />);
-}
+Object.keys(EnumIcon).map((key: string) =>
+  storiesOf("Icon Link", module).add(key, () => (
+    <IconLink icon={EnumIcon[key as keyof typeof EnumIcon]} />
+  ))
+);
